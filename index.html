@@ -7,6 +7,24 @@
 
 <style>
 
+*{
+	color:white;
+
+}
+.sectionHeader{
+	color: red
+}
+.layer {
+    background-color: rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+
 header{
 	background-image: url(images1.jpg) ;
 	background-color: red;       /*Realistic Water Effect without JavaScript - HTML/CSS Only */
@@ -19,7 +37,7 @@ header{
 }
 .main{
    margin-top: 1px;
-
+   
 }
 .button{
   background-color: #4CAF50; /* Green */
@@ -42,9 +60,34 @@ header{
 .button7 {background-color: darkorange;}
 .button8 {background-color: red;}
 
-body {
-  height: 500px;
+.btn{
+	border: 2px solid black;
+  background-color: #DAF7A6;
+  color: black;
+  padding: 14px 28px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 12px;
 }
+.heading{
+	border-color: white;
+  color: red;
+}
+
+.heading:hover {
+  background: #f44336;
+  color: white;
+}
+
+
+body {
+  /*height: 500px*/
+    background-image: url("giphy (3).gif");
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
 
 
 #returnBtn{
@@ -62,6 +105,10 @@ body {
 		#returnBtn p{margin : auto;
 		}
 
+
+
+
+
 </style>
 <SCRIPT TYPE="text/javascript"> function popup(mylink, windowname) { if (! window.focus)return true; var href; if (typeof(mylink) == 'string') href=mylink; else href=mylink.href; window.open(href, windowname, 'width=400,height=200,scrollbars=yes'); return false; } </SCRIPT>
 
@@ -69,10 +116,12 @@ body {
 </head>
 <body>
 
+<div class="layer">
+
 <header>
 
 <br>
-<h3 id="top" style="text-align: left; color: black;   font-size: 18px;"><b>武漢肺炎-專題跟踪=></b>
+<h3 id="top" style="text-align: left; color: black;   font-size: 18px;">武漢肺炎-專題跟踪=></b>
 
     <a title="點擊打開網站"  href="https://wars.vote4.hk/" target="_blank"><b><button class="button">武漢肺炎民間資訊網</button></b></a>
 
@@ -83,7 +132,7 @@ body {
 	
 	<a title="點擊打開網站看星加波防疫資訊" href="https://www.gov.sg/" target="_blank"><button class="button button5"><b>星加坡衛生處</b></button></a>  
     
-    <a title="點擊打開網站" href="https://www.google.com/maps/d/u/0/viewer?mid=1Of93eGij1-nezhqJ3G5Z49yVR0KzChk-&ll=22.380230649464256%2C114.09645518634113&z=12" target="_blank"><button class="button button4"><b>香港肺炎疫情地圖</b></a>
+    <a title="點擊打開網站" href="https://www.google.com/maps/d/u/0/viewer?mid=1Of93eGij1-nezhqJ3G5Z49yVR0KzChk-&ll=22.380230649464256%2C114.09645518634113&z=12" target="_blank"><button class="button button4">香港肺炎疫情地圖</button></a>
     
     <a title="點擊打開網站" href="https://www.dh.gov.hk/cindex.html" target="_blank"><button class="button button5"><b>香港衛生處</b></button></a>
     
@@ -96,7 +145,7 @@ body {
 
     <a title="持續更新" href="https://handler.travel/self-guided-tour-tips/%E6%AD%A6%E6%BC%A2%E8%82%BA%E7%82%8E-%E9%A6%99%E6%B8%AF%E4%BA%BA%E5%85%A5%E5%A2%83%E9%99%90%E5%88%B6-%E5%B0%81%E9%97%9C%E5%9C%8B%E5%AE%B6-%E5%81%9C%E9%A3%9B%E8%88%AA%E7%A9%BA%E5%85%AC%E5%8F%B8/" target="_blank"><button class="button button5">封關國家名單</button></a>
 
-   
+     <a title="香港中文大學醫院製作的圖表，教市民分辨4種疾病" href="https://www.facebook.com/cuhkmedicalcentre/posts/558611151294576?__tn__=-R" target="_blank"><button class="button button4">流感你識分</button></a>
   
    </h3>
     
@@ -137,12 +186,16 @@ body {
    </h3>
     
     <h3 style="text-align: center;">
+
+    <a href="#防疫知識"><button class="button button1">防疫知識</button> </a>	
     
-    <a  href="#News"><button class="button button6"><b>新聞報導</b></button> </a>
+    <a href="#疫情新聞點滴" ><button class="button button4">疫情新聞點滴</button></a>    
+
+    <a  href="#News"><button class="button button6"><b>遊輪疫情</b></button> </a>
 
     <a title="" href="#疫情對政治的影響"><button class="button button7"><b>疫情對政治的影響</b></button> </a>    	
 	
-	<a href="#疫情對經濟和股市的影響"><button class="button button4"><b>疫情對經濟和股市的影響</b></button></a>
+	<a href="#疫情對經濟和股市的影響"><button class="button button2"><b>疫情對經濟和股市的影響</b></button> </a>   
 
 	<a href="#一毒一路發展圖"><button class="button button8">一毒一路發展圖</button> </a>
 
@@ -150,11 +203,10 @@ body {
 
     <a title="" href="#病毒來源的討論"><button class="button button2"><b>病毒來源的討論</b></button></a>
 
-     <a title="香港中文大學醫院製作的圖表，教市民分辨4種疾病" href="https://www.facebook.com/cuhkmedicalcentre/posts/558611151294576?__tn__=-R" target="_blank"><button class="button button7"><b>流感你識分</b></button></a>
-
-     <a href="https://www.thelancet.com/coronavirus" target="_blank"><button class=" button button4"> LANCET</button></a>
+    <a href="https://www.thelancet.com/coronavirus" target="_blank"><button class=" button button4"> LANCET</button></a>
 
      <a href="https://www.researchgate.net/search/publication?q=wuhan%20coronavirus" target="_blank"><button class="button button2">ResearchGate</button></a>
+
 
     </h3>
 
@@ -174,12 +226,11 @@ body {
    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1v9sIitOgCYdjWDua4mkUuiTPxevHiL41" width="640" height="480"></iframe>
  </h3>
 
-         <h3 id="一毒一路發展圖">一毒一路發展圖</h3>
+         <h3 id="一毒一路發展圖"><span style="color: red">一毒一路發展圖</span> </h3>
 
    <p><a href="https://www.thelancet.com/coronavirus" target="_blank" target="_blank">COVID-19 Resource Centre THE LANCET</a></p>
  
    <p><a href="https://www.aa.com.tr/en/middle-east/egypt-confirms-first-coronavirus-case/1734487" target="_blank">20200214 <b>Egypt</b> confirms first coronavirus case</a></p>
-
 
   
    <p><a href="https://www.aa.com.tr/en/asia-pacific/india-philippines-confirm-1st-cases-of-coronavirus/1718885" target="_blank">20200130 <b>India’s Kerala</b> province first case is a student at Wuhan University in China </a></p>
@@ -211,22 +262,34 @@ body {
 
 
 
-             <h3 style="text-align: center;" id="防疫措施">防疫措施</h3>
+             <h3 style="text-align: center;" id="防疫知識"><button class="btn heading">防疫知識</button></h3>
 
 <p><a href="https://www.nationalgeographic.com/science/2020/01/how-coronavirus-spreads-on-a-plane/" target="_blank">Here’s how coronavirus spreads on a plane—and the safest place to sit</a> 
-	<a title="除了選擇靠窗的座位外，要減少於機艙感染疾病的機會，也要特別注意個人衛生。美國有微生物學家根據收集的病菌檢測樣本發現，機艙上細菌最多的地方並非洗手間，而是座位前方的餐桌"  href="https://www.travelmath.com/feature/airline-hygiene-exposed/" target="_blank"><button class="button button3">airline Hygiene</button> </a> </a> </p>
+	<a title="除了選擇靠窗的座位外，要減少於機艙感染疾病的機會，也要特別注意個人衛生。美國有微生物學家根據收集的病菌檢測樣本發現，機艙上細菌最多的地方並非洗手間，而是座位前方的餐桌"  href="https://www.travelmath.com/feature/airline-hygiene-exposed/" target="_blank"><button class="button button3" >airline Hygiene</button></a> </p>
+
+<p><a href="https://www.theguardian.com/world/2020/feb/19/what-is-coronavirus-symptoms-covid-19-wuhan-china-virus-infection" target="_blank">What is coronavirus and what should I do if I have symptoms? (The Guardian)</a></p>
 
 <p><a href="https://www.youtube.com/watch?v=BXKqfvv88ms" target="_blank">20200211 醫生與你 同行抗疫》：現時對新型冠狀病毒的治療方向 (RTHK 香港電台)</a></p>
 
 <p><a href="https://www.youtube.com/watch?v=CnbkxBicFmo" target="_blank">20200211 醫生與你 同行抗疫》：沈祖堯醫生分享 (RTHK 香港電台)</a></p>
 
+<p><a href="https://www.commonhealth.com.tw/article/article.action?nid=80913" target="_blank">20200210 武漢肺炎有超級傳播者　鍾南山：潛伏期長達24天 (康健) </a></p>
+
 <p><a href="https://www.storm.mg/lifestyle/2268160" target="_blank">20200210 武漢肺炎防疫闢謠總整理》開暖爐、鹽水漱口、喝茶跟大蒜水通通都沒用，Line別再亂傳啦！</a></p>
 
 <p><a href="https://www.storm.mg/lifestyle/2249689" target="_blank">20200203 除了武漢肺炎，還有流感在一旁虎視眈眈！專家：別只是打疫苗、洗手，還要做到這5件事</a></p>
 
+
+
 <hr>
           
-             <h3 style="text-align: center;" id="疫情對政治的影響">疫情對政治的影響</h3>
+             <h3 style="text-align: center;" id="疫情對政治的影響"><button class="btn heading">疫情對政治的影響</button> </h3>
+
+ <p><a href="https://www.youtube.com/watch?v=xCbccyZVK1Y" target="_blank">20200220 解讀主席又神隱十日 大陸民企幾近渣都冇得剩 論當代「抓革命，促生產」之荒謬 台海局勢升溫〈蕭若元：理論蕭析〉</a></p>
+
+ <p><a href="https://www.youtube.com/watch?v=TjVxhFbwo1s" target="_blank">20200219 精彩片段》吳嘉隆:是不是打生化戰...【年代向錢看】</a></p>
+
+ <p><a href="https://www.youtube.com/watch?v=VK0rEnf73Sg" target="_blank">20200219 精彩片段》黃創夏：疫情控制不住...【年代向錢看】</a></p>            
 
 <p><a href="https://youtu.be/lRA0l8KsCUI?t=536" target="_blank">20200218 悲觀！全球似乎無一幸免 大陸政情令我提心吊膽！〈蕭若元：理論蕭析〉</a>
    <a href="https://www.youtube.com/watch?v=RrwI3UTs0k4" target="_blank"><button class="button button3">武漢一超市門外出現百米人龍冒險出門排隊買菜</button></a>
@@ -281,7 +344,7 @@ body {
 
 <p><a href="https://www.youtube.com/watch?v=8wcvDkVgm9c" target="_blank">20200210 精彩片段》張國城:習近平的健康...【年代向錢看】</a></p>
 
-<p><a href="https://www.thestandnews.com/politics/%E8%A8%80%E8%AB%96%E8%87%AA%E7%94%B1%E6%AC%8A%E5%BE%9E%E4%BB%8A%E5%A4%A9%E9%96%8B%E5%A7%8B-%E8%87%B4%E5%85%A8%E5%9C%8B%E4%BA%BA%E6%B0%91%E4%BB%A3%E8%A1%A8%E5%A4%A7%E6%9C%83%E5%8F%8A%E5%85%B6%E5%B8%B8%E5%8B%99%E5%A7%94%E5%93%A1%E6%9C%83%E7%9A%84%E5%85%AC%E9%96%8B%E4%BF%A1/" target="_blank">20200208 言論自由權從今天開始 — 致全國人民代表大會及其常務委員會的公開信</a> <a title="點擊打開趙氏讀書評論" href="https://www.youtube.com/watch?v=vu4RiojX7hA" target="_blank"><button><b>張千帆、章詒和等大陸學者籲2月6日定為言論自由日並作政治改革，由Official Secret 說起</b></button></a> </p>   
+<p><a href="https://www.thestandnews.com/politics/%E8%A8%80%E8%AB%96%E8%87%AA%E7%94%B1%E6%AC%8A%E5%BE%9E%E4%BB%8A%E5%A4%A9%E9%96%8B%E5%A7%8B-%E8%87%B4%E5%85%A8%E5%9C%8B%E4%BA%BA%E6%B0%91%E4%BB%A3%E8%A1%A8%E5%A4%A7%E6%9C%83%E5%8F%8A%E5%85%B6%E5%B8%B8%E5%8B%99%E5%A7%94%E5%93%A1%E6%9C%83%E7%9A%84%E5%85%AC%E9%96%8B%E4%BF%A1/" target="_blank">20200208 言論自由權從今天開始 — 致全國人民代表大會及其常務委員會的公開信</a> <a title="點擊打開趙氏讀書評論" href="https://www.youtube.com/watch?v=vu4RiojX7hA" target="_blank"><button class="button button1"><b>張千帆、章詒和等大陸學者籲2月6日定為言論自由日並作政治改革，由Official Secret 說起</b></button></a> </p>   
 
 
 
@@ -340,7 +403,17 @@ body {
 
 <hr>
 
-             <h3 style="text-align: center;" id="疫情對經濟和股市的影響">疫情對經濟和股市的影響</h3>
+             <h3 style="text-align: center;" id="疫情對經濟和股市的影響"><button class="btn heading">疫情對經濟和股市的影響</button></h3>
+
+   
+   
+   <p><a href="https://www.youtube.com/watch?v=3EyqsVs05CA" target="_blank">20200220 海南航空債務又爆煲 香港台灣社群個案鏈勢將激增〈蕭若元：蕭氏新聞台〉2020-02-20</a></p>
+
+   <p><a href="https://www.youtube.com/watch?v=Po5Nj0YELcM" target="_blank">20200220 六七暴動以來我從未見過如此嚴峻的經濟衰退！港府應該全民派錢 再論如何贏得功能組別〈蕭若元：理論蕭析〉</a></p>
+   
+   <p><a href="https://youtu.be/B1PQxsR0J3U?t=210" target="_blank">20200220內地政策自欺欺人欲哭無淚〈蕭若元：蕭氏新聞台〉</a></p>           
+
+   <p><a href="https://www.youtube.com/watch?v=giXA57XfZEg" target="_blank">20200219 精彩片段》朱岳中:對富士康影響非常大...【年代向錢看】</a></p>          
 
    <p><a href="https://www.youtube.com/watch?v=TTkZadNAS_o" target="_blank">20200219 北大方正被銀行吿違約 大陸債項岌岌可危無法支撐 將面對世界性經濟危機？ 〈蕭若元：理論蕭析〉</a></p>          
 
@@ -437,7 +510,8 @@ body {
 
 <hr>
                     
-                    <h3 style="text-align: center;" id="病毒來源的討論">病毒來源的討論</h3>
+                    <h3 style="text-align: center;" id="病毒來源的討論"><button class="btn heading">病毒來源的討論</button></h3>
+
 
    <p><a href="https://www.youtube.com/watch?v=2DnrYx_IzLM" target="_blank">20200219 解讀坊間幾種陰謀論 大陸陷完美風暴 中國官方應盡快公開數據〈蕭若元：理論蕭析〉</a></p>                 
 
@@ -453,6 +527,7 @@ body {
      <a href="https://www.bastillepost.com/hongkong/article/5928575-%E6%AD%A6%E6%BC%A2%E7%97%85%E6%AF%92%E6%89%80%E9%99%B3%E5%85%A8%E5%A7%A3%E8%81%B2%E6%98%8E%EF%BC%9A%E5%BE%9E%E6%9C%AA%E8%88%89%E5%A0%B1%EF%BC%8C%E8%AB%8B%E5%A4%A7%E5%AE%B6%E5%9A%B4%E9%98%B2%E7%9B%B8" target="_blank"><button class="button button3">武漢病毒所陳全姣聲明</button></a>
 
    </p>               
+
 
 
   <p><a href="https://www.youtube.com/watch?v=B_rVK0rZ9Es" target="_blank">20200216 香港再添一例令人憂心 新加坡日本危險 全國尋找黃燕玲是零號？變「水神山」的真相 《蕭若元：蕭氏新聞台》</a>
@@ -488,7 +563,7 @@ body {
 
 <p><a href="https://www.youtube.com/watch?v=VzERcWRp-QU" target="_blank">20200212 精彩片段》吳明杰:對中國生物戰是知情...【年代向錢看】</a></p>                    
 
-<p><a href="https://www.youtube.com/watch?v=oL0Quz9PwY4" target="_blank">20200212 精彩片段》李龍騰:我不相信!【年代向錢看】</a> <a title="點擊打開網頁" href="https://www.sydneytoday.com/content-102007432403008" target="_blank"><button><b>李宁院士出售实验室动物</b></button></a></p>
+<p><a href="https://www.youtube.com/watch?v=oL0Quz9PwY4" target="_blank">20200212 精彩片段》李龍騰:我不相信!【年代向錢看】</a> <a title="點擊打開網頁" href="https://www.sydneytoday.com/content-102007432403008" target="_blank"><button class="button button1"><b>李宁院士出售实验室动物</b></button></a></p>
 
 <p><a href="https://www.youtube.com/watch?v=UUrNgQ_F_1w" target="_blank">20200212 美國都害怕！？冠狀病毒「變異」適應力強？ 竟跟中國「千人計畫」環環相扣！？ </a></p>
 
@@ -496,7 +571,7 @@ body {
 
 <p><a href="https://www.bbc.com/news/world-us-canada-51317386" target="_blank">20200212 World-renowned HIV researcher Frank Plummer, 67, dies</a></p>
 
-<p><a title="沒有訂閱，可能看不到這蘋果新聞" href="https://hk.news.appledaily.com/china/20200210/QQQ3PND7PAFZXVAZNZQ2DA6MPY/" target="_blank">20200211 新病毒疑人工合成復旦校友促徹查 武漢病毒所39歲女所長被起底</a><a title="點擊打開免費新聞" href="https://www.ipkmedia.com/%E6%9F%A5%E6%89%BE%E6%A0%B9%E6%BA%90%EF%BC%8C%E6%9D%9C%E7%BB%9D%E7%96%AB%E6%83%85-%E5%A4%8D%E6%97%A6%E7%94%9F%E7%89%A9%E7%B3%BB%E6%A0%A1%E5%8F%8B%E5%91%BC%E5%90%81/" target="_blank"><button><b>查找根源，杜绝疫情——复旦生物系校友呼吁</b></button></a> </p>
+<p><a title="沒有訂閱，可能看不到這蘋果新聞" href="https://hk.news.appledaily.com/china/20200210/QQQ3PND7PAFZXVAZNZQ2DA6MPY/" target="_blank">20200211 新病毒疑人工合成復旦校友促徹查 武漢病毒所39歲女所長被起底</a><a title="點擊打開免費新聞" href="https://www.ipkmedia.com/%E6%9F%A5%E6%89%BE%E6%A0%B9%E6%BA%90%EF%BC%8C%E6%9D%9C%E7%BB%9D%E7%96%AB%E6%83%85-%E5%A4%8D%E6%97%A6%E7%94%9F%E7%89%A9%E7%B3%BB%E6%A0%A1%E5%8F%8B%E5%91%BC%E5%90%81/" target="_blank"><button class="button button1"><b>查找根源，杜绝疫情——复旦生物系校友呼吁</b></button></a> </p>
 
 <p>\<a href="https://www.youtube.com/watch?v=RtUX9QjSKno" target="_blank">20200211 名家論談】生物學家陳竟明博士（6）：加拿大P4實驗室主任離奇死再談武漢P4 危機藏何處 很多科學家都想做這個實驗 《看中國》</a></p>
 
@@ -540,8 +615,8 @@ body {
   <p><a href="https://www.youtube.com/watch?v=I71KIGj_1xk" target="_blank">20200204 【名家論談】生物學家陳竟明博士：親自畫5張圖詳細解說艾滋基因是否是真能插入?病原入侵人體後何藥可醫？《看中國》</a></p>
 
   <p><a href="http://news.creaders.net/china/2020/02/04/2186618.html" target="_blank">20200204 传饶毅建议舒红兵：夫人辞职“武汉病毒所长” 中國嘹望</a>
-     <a title="點擊打開youtube" href="https://www.youtube.com/watch?v=MgrZe0dg5Gg" target="_blank"><button><b>学者饶毅：武汉病毒所所长王延轶下台/王剑每日财经观察</b></button></a>
-     <a title="點擊打開饶毅的背景" href="https://baike.baidu.com/item/%E9%A5%B6%E6%AF%85" target="_blank"><button><b>饶毅</b></button></a>
+     <a title="點擊打開youtube" href="https://www.youtube.com/watch?v=MgrZe0dg5Gg" target="_blank"><button class="button button1"><b>学者饶毅：武汉病毒所所长王延轶下台/王剑每日财经观察</b></button></a>
+     <a title="點擊打開饶毅的背景" href="https://baike.baidu.com/item/%E9%A5%B6%E6%AF%85" target="_blank"><button class="button button2"><b>饶毅</b></button></a>
   </p>
   <p><a href="https://www.youtube.com/watch?v=kedtPHovKIE" target="_blank">20200202 武汉病毒所所长王延轶和她的老公舒红兵（20200202第1323期）</a></p>
 
@@ -549,7 +624,20 @@ body {
 
 <hr>
 
-             <h3 style="text-align: center;" id="對疫情的議論">對疫情的議論</h3>
+             <h3 style="text-align: center;" id="對疫情的議論"><button class="btn heading">對疫情的議論</button></h3>
+
+
+<p><a href="https://youtu.be/3EyqsVs05CA?t=381" target="_blank">20200220 香港台灣社群個案鏈勢將激增〈蕭若元：蕭氏新聞台〉</a></p>   
+
+<p><a href="https://www.youtube.com/watch?v=yV81iBuDvFc&t=780s" target="_blank">20200220 最新數據急轉直下 令人憂心 談談內地真實情況已不可抑止〈蕭若元：蕭氏新聞台〉</a></p>          
+
+<p><a href="https://www.youtube.com/watch?v=B1PQxsR0J3U" target="_blank">20200220 香港再增3個案東亞一鑊熟 內地政策自欺欺人欲哭無淚〈蕭若元：蕭氏新聞台〉</a></p>
+
+<p><a href="https://www.pharmaceutical-technology.com/features/coronavirus-affected-countries-thailand-measures-impact-tourism/" target="_blank">20200219 Coronavirus in Thailand: dealing with the 2019-nCoV (Covid-19) outbreak and impact (Pharmaceutical Technology)</a></p>
+
+<p><a href="https://www.nbcnews.com/health/health-news/coronavirus-may-be-detectable-symptoms-start-report-suggests-n1138316" target="_blank">20200219 Coronavirus may be detectable before symptoms start, report suggests</a></p>             
+
+<p><a href="https://www.youtube.com/watch?v=4F3yRW7b64I" target="_blank">20200219 精彩片段》康仁俊:疫情沒有減緩【年代向錢看】</a></p>             
 
 <p><a href="https://www.youtube.com/watch?v=bMxQmd8mfx8" target="_blank">20200219 準則反轉再反轉令人啼笑皆非 從日本情況看問題之大鑊〈蕭若元：理論蕭析〉</a></p>
 
@@ -595,6 +683,8 @@ body {
 <p><a href="https://www.youtube.com/watch?v=hhauF9JZJzM&list=PLs2dnbECTl4dzE8xfqoUO9xACBgXGKGuh" target="_blank">20200214 疫情發展的3種可能，大疫之下北京4大怪異動作。武漢肺炎患者令人心憂，疫情何時見頂？亞臨床康復仍攜帶病毒！【新聞看點 李沐陽 】</a></p>
 <p><a href="https://www.youtube.com/watch?v=n6x6CLvqk80" target="_blank">20200214 武漢疫情持續延燒，中國企業都處於停工狀態，12日中共要各地「推動復工復產」，習近平早在3日要求不停產，疫情肆虐，無人肯聽| (香港大紀)</a></p>             
 
+  <p><a href="https://thediplomat.com/2020/02/coronavirus-hits-thailand-hard/" target="_blank">20200213 Coronavirus Hits Thailand Hard (THE DEPLOMAT)</a></p>
+
 <p><a href="https://www.youtube.com/watch?v=pjBLxz1kcMg" target="_blank">20200213 精彩片段》洪永祥:肺部就是一個戰場【年代向錢看】</a></p>
 
 <P><a href="https://www.youtube.com/watch?v=OwmglQ_kkrc" target="_blank">20200213 精彩片段》李秉穎:應該是沒辦法圍堵了...【年代向錢看】</a></P>
@@ -606,6 +696,8 @@ body {
 <p><a href="https://www.youtube.com/watch?v=stDAH0Uolj8&t=432s" target="_blank">广东紧急立法：政府可征用私人财产抗疫！饿兽出笼怎么防？ (文昭談古論今)</a></p>
 
 <p><a href="https://www.youtube.com/watch?v=9vEXispVCUg" target="_blank">20200212 精彩片段》康仁俊:對中國不放心就是死亡率...【年代向錢看】</a></p> 
+
+<p><a href="https://www.hk01.com/%E6%94%BF%E6%83%85/433679/%E6%AD%A6%E6%BC%A2%E8%82%BA%E7%82%8E-%E6%A2%81%E5%8D%93%E5%81%89-%E5%80%98%E7%96%AB%E6%83%85%E4%B8%8D%E5%8F%97%E6%8E%A7-%E6%88%96%E6%84%9F%E6%9F%93%E5%85%A8%E7%90%8360-%E4%BA%BA%E5%8F%A3" target="_blank">20200212 【武漢肺炎】梁卓偉：倘疫情不受控　或感染全球60%人口 (HK01)</a></p>
 
 <p><a href="https://www.youtube.com/watch?v=4qNGhmE0TrE" target="_blank">20200211 中國疫情資訊不透明！全球防疫大缺口？專訪台大醫院小兒感染科醫生李秉穎 (新唐人)</a></p>           
 
@@ -658,41 +750,51 @@ body {
 <hr>
 
   
-             <h3 style="text-align: center;" id="News">有關疫情新聞報導</h3>
+             <h3 style="text-align: center;" id="News"><button class="btn heading">遊輪疫情報導</button></h3>
 
 
 
 <h3> 武漢肺炎對郵輪的影響 <a title="點擊打開維基百科" href="https://zh.wikipedia.org/wiki/2019%E6%96%B0%E5%9E%8B%E5%86%A0%E7%8B%80%E7%97%85%E6%AF%92%E5%9C%8B%E9%9A%9B%E9%83%B5%E8%BC%AA%E7%96%AB%E6%83%85" target="_blank">維基百科</a> </h3>
 
-<h4>威士特丹號</h4>
+<h4 style="color: red">威士特丹號</h4>
+
+<p><a href="https://news.rthk.hk/rthk/ch/component/k2/1509037-20200217.htm" target="_blank">20200219 威士特丹號有確診患者　多國研究追蹤其餘落船乘客 (香港電台）</a></p>
+
+<p><a href="https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/435588/%E5%A8%81%E5%A3%AB%E7%89%B9%E4%B8%B9%E8%99%9F-%E9%A6%AC%E4%BE%86%E8%A5%BF%E4%BA%9E-%E4%B8%8D%E6%8E%92%E9%99%A4%E7%A2%BA%E8%A8%BA%E5%A5%B3%E6%82%A3%E8%80%85%E5%9C%A8%E6%B8%AF%E6%9C%9F%E9%96%93%E6%84%9F%E6%9F%93%E4%BB%96%E4%BA%BA" target="_blank">20200217 馬來西亞：不排除確診女患者在港期間感染他人 (HK01)</a></p>
 
 <p><a href="https://www.bbc.com/zhongwen/trad/world-51506782" target="-_blank">20200214 肺炎疫情：柬埔寨接待郵輪靠岸的政治考量 (BBC 中文)</a></p>
 
-<p><a href="https://news.rthk.hk/rthk/ch/component/k2/1508492-20200214.htm?spTabChangeable=0" target="_blank">20200214 威士特丹號郵輪乘客柬埔寨登岸　總理洪森在場迎接</a></p>
+<p><a href="https://news.rthk.hk/rthk/ch/component/k2/1508492-20200214.htm?spTabChangeable=0" target="_blank">20200214 威士特丹號郵輪乘客柬埔寨登岸　總理洪森在場迎接 （RTHK）</a></p>
 
-<p><a href="https://www.youtube.com/watch?v=xwEMGKBZGK8" target="_blank">20200211 【武漢肺炎】美日菲泰禁港出發郵輪泊岸 「威士特丹號」乘客：飄流多天令人很憂慮</a></p>
+<p><a href="https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/434027/%E5%A8%81%E5%A3%AB%E7%89%B9%E4%B8%B9%E8%99%9F-%E9%83%B5%E8%BC%AA%E6%8A%B5%E9%81%94%E6%9F%AC%E5%9F%94%E5%AF%A8-%E4%B9%98%E5%AE%A2%E4%B8%8B%E8%88%B9%E5%89%8D%E8%A6%81%E6%8A%BD%E8%A1%80%E6%AA%A2%E9%A9%97" target="_blank">20200214 郵輪抵達柬埔寨　乘客下船前要抽血檢驗 (HK01)</a></p>
 
-<p><a href="https://inews.hket.com/article/2561693/?lcc=an" target="_blank">20200211 【威士特丹號】再成海上人球 泰國衛生部下令拒停泊</a></p>
+<p><a href="https://www.youtube.com/watch?v=xwEMGKBZGK8" target="_blank">20200211 【武漢肺炎】美日菲泰禁港出發郵輪泊岸 「威士特丹號」乘客：飄流多天令人很憂慮 (蘋果-Youtube
+)</a></p>
 
-<p><a href="https://inews.hket.com/article/2561195/%E5%A8%81%E5%A3%AB%E7%89%B9%E4%B8%B9%E8%99%9F%E9%81%8A%E8%BC%AA%E7%B5%82%E7%8D%B2%E5%87%86%E6%B3%8A%E6%B3%B0%E5%9C%8B%E3%80%8C%E7%9B%B8%E4%BF%A1%E6%B2%92%E4%BA%BA%E6%82%A3%E6%AD%A6%E6%BC%A2%E8%82%BA%E7%82%8E%E3%80%8D" target="_blank">20200211 威士特丹號遊輪終獲准泊泰國「相信沒人患武漢肺炎」</a></p>
+<p><a href="https://inews.hket.com/article/2561693/?lcc=an" target="_blank">20200211 【威士特丹號】再成海上人球 泰國衛生部下令拒停泊 (HKET)</a></p>
 
-<p><a href="https://www.youtube.com/watch?v=pXLhvpQ5quw" target="_blank">20200209 最新》「載過發燒客」威士特丹號曾停高雄 駁二：影響不大</a></p>
+<p><a href="https://inews.hket.com/article/2561195/%E5%A8%81%E5%A3%AB%E7%89%B9%E4%B8%B9%E8%99%9F%E9%81%8A%E8%BC%AA%E7%B5%82%E7%8D%B2%E5%87%86%E6%B3%8A%E6%B3%B0%E5%9C%8B%E3%80%8C%E7%9B%B8%E4%BF%A1%E6%B2%92%E4%BA%BA%E6%82%A3%E6%AD%A6%E6%BC%A2%E8%82%BA%E7%82%8E%E3%80%8D" target="_blank">20200211 威士特丹號遊輪終獲准泊泰國「相信沒人患武漢肺炎」 (HKET)</a></p>
 
-<p><a href="https://www.youtube.com/watch?v=4F-ER1KyRTY" target="_blank">20200208 武漢肺炎－船上38人發燒 「威士特丹號」成海上人球－民視新聞</a></p>
+<p><a href="https://www.youtube.com/watch?v=pXLhvpQ5quw" target="_blank">20200209 最新》「載過發燒客」威士特丹號曾停高雄 駁二：影響不大 (東森新聞 CH51-Youtube)</a></p>
 
-<p><a href="https://www.youtube.com/watch?v=KRUM1FmFIPo" target="_blank">20200208 "威士特丹號"郵輪爆36人有症狀! 千人玩高雄包車司機心很慌...│記者 黃佳萍 薛仁宏│</a></p>
+<p><a href="https://www.youtube.com/watch?v=4F-ER1KyRTY" target="_blank">20200208 武漢肺炎－船上38人發燒 「威士特丹號」成海上人球－民視新聞 (Youtube)</a></p>
 
-<p><a href="https://www.youtube.com/watch?v=dce7CBtKjVE" target="_blank">20200205 38人有症狀！「威士特丹號」2千多人仍下船</a></p>
+<p><a href="https://www.youtube.com/watch?v=KRUM1FmFIPo" target="_blank">20200208 "威士特丹號"郵輪爆36人有症狀! 千人玩高雄包車司機心很慌...│記者 黃佳萍 薛仁宏│ (三立LIVE新聞-Youtube)
+</a></p>
 
-<p><a href="https://www.youtube.com/watch?v=JGQEwhvh_D0" target="_blank">20191231 帶你登船參觀 荷美郵輪 威士特丹號 ms Westerdam</a></p>
+<p><a href="https://www.youtube.com/watch?v=dce7CBtKjVE" target="_blank">20200205 38人有症狀！「威士特丹號」2千多人仍下船 (TVBS youtube)</a></p>
 
-<p><a href="https://www.youtube.com/watch?v=Tfg8rT-vZtY" target="_blank">20190321 參觀荷美郵輪 - 威士特丹號 / Holland America Westerdam Ship Visit</a></p>
+<p><a href="https://www.youtube.com/watch?v=JGQEwhvh_D0" target="_blank">20191231 帶你登船參觀 荷美郵輪 威士特丹號 ms Westerdam (Youtube)</a></p>
 
-<p><a href="https://www.youtube.com/watch?v=MbVXiel9Ayw" target="_blank">20190315 【空中散步】荷美郵輪威士特丹號進出基隆港</a></p>
+<p><a href="https://www.youtube.com/watch?v=Tfg8rT-vZtY" target="_blank">20190321 參觀荷美郵輪 - 威士特丹號 / Holland America Westerdam Ship Visit (Youtube)</a></p>
+
+<p><a href="https://www.youtube.com/watch?v=MbVXiel9Ayw" target="_blank">20190315 【空中散步】荷美郵輪威士特丹號進出基隆港 (Youtube)</a></p>
+
+<p><a href="http://www.hollandamericaline.tw/DynamicContent.aspx?id=EAA3EC61F079B7A4" target="_blank">威士特丹號 ms Westerdam 官方網頁</a></p>
 
 <hr>
 
-<h4> 鑽石公主號郵輪</h4>
+<h4 style="color: red"> 鑽石公主號郵輪</h4>
 
  <p><a href="https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/433501/%E6%AD%A6%E6%BC%A2%E8%82%BA%E7%82%8E-%E9%83%B5%E8%BC%AA%E9%91%BD%E7%9F%B3%E5%85%AC%E4%B8%BB%E8%99%9F%E6%96%B0%E5%A2%9E39%E5%90%8D%E6%82%A3%E8%80%85%E5%8C%85%E6%8B%AC%E4%B8%AD%E5%9C%8B%E4%BA%BA" target="_blank">20200211 郵輪鑽石公主號新增39名患者包括中國人</a></p>
 
@@ -736,7 +838,7 @@ body {
 <hr>
 
 
-<h4>世界夢號</h4>
+<h4 style="color: red">世界夢號</h4>
 
 <p><a href="https://www.youtube.com/watch?v=kNn7-PnVXsk" target="_blank">20200209 世界夢號3600人下船鑽石公主號70例確診</a></p>
 
@@ -751,16 +853,17 @@ body {
 <br>
 
 <hr>
-         <h3 style="text-align: center;">其他新聞</h3>
+         <h3 style="text-align: center;" id="疫情新聞點滴"><button class="btn heading">疫情新聞點滴</button></h3>
 
+
+
+<p><a href="https://www.youtube.com/watch?v=iy925mTswYA" target="_blank">20200219 【完整公開】LIVE 已故白牌車司機胞妹確診 台灣累計23例武漢肺炎 (台視新聞 TTV NEWS-youtube)</a></p>
 
 <p><a href="https://www.youtube.com/watch?v=buVwcZQUo4E" target="_blank">20200219 「整個武漢感覺就像一個死城」 醫院上千人排隊等試紙  (香港大紀元)</a></p>
 
-
-
 <p><a href="https://www.youtube.com/watch?v=kMKxIL_Qghk" target="_blank">20200218 疫情最前線染病 武昌醫院院長劉智明病逝－民視新聞</a></p>
 
-<p><a href="https://www.youtube.com/watch?v=7-QQvbKfBWI" target="_blank">200218 武肺多兇險？醫學權威《刺針》證實3壞消息，美國確診人數升至15例。美軍方接行政令啟動全球防疫計劃，為病毒可能在美擴散做準備，湖北人大政協代表大部分被隔離。(香港大紀元)</a></p>
+<p><a href="https://www.youtube.com/watch?v=7-QQvbKfBWI" target="_blank">20200218 武肺多兇險？醫學權威《刺針》證實3壞消息，美國確診人數升至15例。美軍方接行政令啟動全球防疫計劃，為病毒可能在美擴散做準備，湖北人大政協代表大部分被隔離。(香港大紀元)</a></p>
 
 <p><a href="https://www.hk01.com/%E5%8D%B3%E6%99%82%E4%B8%AD%E5%9C%8B/435662/%E6%AD%A6%E6%BC%A2%E8%82%BA%E7%82%8E-%E6%B9%96%E5%8C%97%E9%9A%A8%E5%B7%9E%E5%B8%82%E9%95%B7%E5%A4%AE%E8%A6%96%E6%B1%82%E5%8A%A9%E5%BE%8C-%E5%AD%AB%E6%98%A5%E8%98%AD%E5%89%8D%E5%BE%80%E8%80%83%E5%AF%9F" target="_blank">20200217 【武漢肺炎】湖北隨州市長央視求助後　孫春蘭前往考察 (HK01)</a></p>
 
@@ -779,8 +882,6 @@ body {
  <p><a href="https://www.hk01.com/%E5%8D%B3%E6%99%82%E4%B8%AD%E5%9C%8B/435281/%E6%AD%A6%E6%BC%A2%E8%82%BA%E7%82%8E-%E5%85%A8%E8%BA%AB%E4%BC%BD%E7%91%AA%E5%88%80%E7%99%BC%E6%98%8E%E8%80%85%E6%AE%B5%E6%AD%A3%E6%BE%84%E6%AD%A6%E6%BC%A2%E6%9F%93%E7%96%AB%E9%80%9D%E4%B8%96-%E4%BA%AB%E5%B9%B486%E6%AD%B2" target="_blank">20200216 【武漢肺炎】全身伽瑪刀發明者段正澄武漢染疫逝世　享年86歲 (HK01)</a></p>
 
  <p><a href="https://www.cnbc.com/2020/02/15/heres-why-the-white-house-doesnt-trust-chinas-coronavirus-numbers.html" target="_blank">20200215 The White House doesn’t trust China’s coronavirus numbers — here’s why (CNBC) </a></p>        
-
- 
 
  <p><a href="https://www.factwire.org/investigation/%e9%86%ab%e7%ae%a1%e5%b1%80%e6%8c%87%e7%a4%ba%e7%84%a1%e6%b4%97%e6%bb%8c%e6%9c%9f-%e6%8a%97%e7%96%abdirty-team%e9%86%ab%e8%ad%b7%e4%bb%8a%e8%b5%b7%e9%99%b8%e7%ba%8c%e5%87%ba%e6%9b%b4-%e4%b8%8d/" target="_blank">20200215 醫管局指示無洗滌期 抗疫Dirty team醫護今起陸續出更 不隔離直接回病房工作 (傳真社）</a></p>        
 
@@ -1001,12 +1102,7 @@ body {
 
 <p><a href="https://www.cnbc.com/2020/01/31/uk-confirms-two-cases-of-coronavirus.html" target="_blank">20200131 UK confirms its first coronavirus cases</a></p>
 
-
-
 <p><a href="https://www.youtube.com/watch?v=L7w2-EutRnU" target="_blank">20200131 黃岡孝感兩市疫情僅次武漢 反駁許幀醫護罷工勒索政府 〈蕭若元：蕭氏新聞台〉</a></p>
-
-
-
 
 <p><a href="https://hk.news.appledaily.com/local/20200131/DRV2IXZ3GIM4Q2WVLIQSIMMF4M/" target="_blank">20200131 【武漢肺炎】海通一姐九龍站接武漢父母後確診 或成港首宗有限度人傳人</a></p>
 
@@ -1077,7 +1173,7 @@ body {
 
 <p><a href="https://www.hk01.com/%E6%95%B8%E7%A2%BC%E7%94%9F%E6%B4%BB/425758/%E9%80%83%E9%9B%A2%E6%AD%A6%E6%BC%A2-%E7%99%BE%E5%BA%A6%E5%9C%B0%E5%9C%96%E6%8F%AD%E6%AD%A6%E6%BC%A2%E5%B0%81%E5%9F%8E%E5%89%8D%E4%BA%BA%E5%8F%A3%E9%81%B7%E7%A7%BB%E6%AF%94%E4%BE%8B%E5%A2%9E-%E7%9B%AE%E7%9A%84%E5%9C%B0%E4%B8%80%E8%A6%BD" target="_blank">20200123 逃離武漢？】百度地圖揭武漢封城前人口遷移比例增　目的地一覽</a></p>
 
-
+<p><a href="https://www.who.int/csr/don/14-january-2020-novel-coronavirus-thailand-ex-china/en/" target="_blank">20200114 Novel Coronavirus – Thailand (ex-China) (WHO)</a></p>
 
 
 <p><a href="http://www.shopsmart.org.hk/shopsmart/index.php/Mobile/Shopping/viewReport?module=1&first_cate_id=20400&product_id=154&attribute_id=3&report_id=191" target="_blank">201712 測試29款口罩 （2017年12月）消委會</a></p>
@@ -1085,6 +1181,7 @@ body {
 
 </div>
 
+</div>
 <script>
 function scrollWin() {
   window.scrollTo(0, 1700);
